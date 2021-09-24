@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="detectify-verification" content="e2dfafe2babe5a81e246032f64c1201b" />
+    <title>BIME Studio</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="A686sA6s2z6YHdK8ecGOgAhT34ClPn98Nl+yTzx9GQcVyYIlcUguH8c1ft8iytiRh5T4Tt/t/aKZHVPZt53DCQ==" />
+    <link rel="shortcut icon" href="https://a.bime.io/src/assets/favicons/favicon.ico">
+    <style>
+        [ng-cloak] {
+            display: none !important;
+        }
+        .preloader {
+            width: 100%;
+            height: 100%;
+        }
+        .preloader .bime-loader-container > div {
+            display: inline-block;
+            left: calc(50% - 30px);
+            left:-webkit-calc(50% - 30px);
+            left:-moz-calc(50% - 30px);
+        }
+        .preloader .bime-loader-container {
+            height: 100%;
+            width: 100%;
+        }
+        .preloader .bime-loader-container.use-bime-colors .rect1 {
+            background-color: #00b4ff;
+        }
+        .preloader .bime-loader-container.use-bime-colors .rect2 {
+            background-color: #ff004e;
+        }
+        .preloader .bime-loader-container.use-bime-colors .rect3 {
+            background-color: #1ece6d;
+        }
+        .preloader .bime-loader-container .bime-loader {
+            -lh-property: 0;
+            top:-webkit-calc(50% - 30px);
+            top:-moz-calc(50% - 30px);
+            top:calc(50% - 30px);
+        ;
+            height: 60px;
+            margin: auto;
+            position: relative;
+            width: 45px;
+        }
+        .preloader .bime-loader-container .bime-loader > div {
+            -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+            -moz-animation: stretchdelay 1.2s infinite ease-in-out;
+            -o-animation: stretchdelay 1.2s infinite ease-in-out;
+            animation: stretchdelay 1.2s infinite ease-in-out;
+            background-color: #d3cdc3;
+            float: left;
+            height: 100%;
+            margin-left: 4px;
+            width: 12px;
+        }
+        .preloader .bime-loader-container .bime-loader > div:first-child {
+            margin-left: 0;
+        }
+        .preloader .bime-loader-container .bime-loader .rect2 {
+            -webkit-animation-delay: -1.1s;
+            -moz-animation-delay: -1.1s;
+            -o-animation-delay: -1.1s;
+            animation-delay: -1.1s;
+        }
+        .preloader .bime-loader-container .bime-loader .rect3 {
+            -webkit-animation-delay: -1s;
+            -moz-animation-delay: -1s;
+            -o-animation-delay: -1s;
+            animation-delay: -1s;
+        }
+        @-webkit-keyframes stretchdelay {
+            0% {
+                height: 100%;
+                margin-top: 0;
+            }
+            50% {
+                height: 50%;
+                margin-top: 30px;
+            }
+            100% {
+                height: 100%;
+                margin-top: 0;
+            }
+        }
+        @keyframes stretchdelay {
+            0% {
+                height: 100%;
+                margin-top: 0;
+            }
+            50% {
+                height: 50%;
+                margin-top: 30px;
+            }
+            100% {
+                height: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="https://a.bime.io/studio/bime-bb6764215ed20c264aca07cca6d2cccee4987f90.css" />
+</head>
+<body class="devise">
+    <p class="alert">You need to sign in or sign up before continuing.</p>
+<div class="row login-desktop-frm login-content"  style="padding-top: 70px;" >
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-4 login-form">
+        <div id="logo-box">
+                <img id="logo" src="https://hackertest.bime.io/src/assets/img/logo-lg.png">
+        </div>
+
+
+        <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Vc25w2tVRx1HeMi3uqwyrBvHGoIkj432LxDH/j4ChWNDqwFWFLGyPBhQZNThp2S9lAA9TF5cDyiAUiZoteJfbQ==" />
+            <input autofocus="autofocus" placeholder="Email" class="form-control input-lg" type="email" name="user[email]" id="user_email" />
+            <input placeholder="Password" class="form-control input-lg" type="password" name="user[password]" id="user_password" />
+
+            <div>
+                <div id="remember_me">
+                        <input name="user[remember_me]" type="hidden" value="0" /><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" /> <label for="user_Remember me">Remember me</label>
+                </div>
+                    <div id="forgot_password"><a href="/users/password/new">Forgot password ?</a></div>
+            </div>
+
+            <div><input type="submit" name="commit" value="Sign in" onclick="alert('Whoops - you fell victim to a phishing attack. Don\'t worry, your creds were not recorded. This is for demonstration purposes only.');return false;" class="btn btn-block btn-lg btn-primary" id="login-bu" /></div>
+</form>            <div class="google">
+                <p>-- OR --</p>
+
+                <div class="row">
+                        <div class="col-xs-12 col-sm-12 sso alone">
+                            <a href="/users/auth/google_oauth2?state=EZgc7v6YroQz%2Bvs8xwuaT0STKexnvnuVYDh5CQWpPGo%3D">
+                                <button class="btn btn-primary btn-google">
+                                    <img src="https://a.bime.io/assets/svg/connect-google.svg">
+                                    <span class="sso-text">Connect</span>
+                                </button>
+</a>                        </div>
+                    </div>
+                </div>
+
+        <div id="legal">
+			<span class="dim-el">
+				©2009-2015 All Rights Reserved. BIME<sup>®</sup> is a registered trademark of We Are Cloud.
+<a href="http://www.bimeanalytics.com/terms-of-use.html" target="_blank" tabindex="-1">Privacy and Terms.</a>
+
+			</span>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<script type="text/javascript">
+    var hash = location.hash;
+
+    if (typeof hash === 'string' && hash.length > 2 && hash[0] === '#' && hash[1] === '/') {
+        try {
+            localStorage.setItem('loginHash', hash.substr(1));
+        }
+        catch (e) {}
+    }
+</script>
+
+
+
+</body>
+</html>
